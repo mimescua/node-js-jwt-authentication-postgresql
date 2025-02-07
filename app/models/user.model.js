@@ -9,6 +9,8 @@ module.exports = (sequelize, Sequelize) => {
     password: {
       type: Sequelize.STRING
     }
+  }, {
+    schema: process.env.PG_SCHEMA
   });
 
   return User;

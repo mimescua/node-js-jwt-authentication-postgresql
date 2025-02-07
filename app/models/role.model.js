@@ -7,6 +7,8 @@ module.exports = (sequelize, Sequelize) => {
     name: {
       type: Sequelize.STRING
     }
+  }, {
+    schema: process.env.PG_SCHEMA
   });
 
   return Role;
